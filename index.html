@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Legends - Fan Site</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#111;
+            color:white;
+        }
+
+        header{
+            background:linear-gradient(90deg,#ff9800,#ff5722);
+            text-align:center;
+            padding:30px;
+        }
+
+        header h1{
+            font-size:3em;
+        }
+
+        nav{
+            background:#222;
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:gold;
+        }
+
+        .banner{
+            background:url("https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1600") center/cover;
+            height:350px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-shadow:3px 3px 8px black;
+        }
+
+        .banner h2{
+            font-size:3em;
+            background:rgba(0,0,0,.5);
+            padding:20px;
+            border-radius:10px;
+        }
+
+        section{
+            max-width:1100px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        h2{
+            color:orange;
+            margin-bottom:20px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:#222;
+            border-radius:12px;
+            overflow:hidden;
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+            box-shadow:0 0 15px orange;
+        }
+
+        .card img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            padding:15px;
+            color:gold;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+        }
+
+        footer{
+            background:#222;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        button{
+            background:orange;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            margin-top:20px;
+        }
+
+        button:hover{
+            background:#ff5722;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🔥 Dragon Ball Legends 🔥</h1>
+    <p>O universo das batalhas épicas no seu celular!</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#personagens">Personagens</a>
+    <a href="#novidades">Novidades</a>
+</nav>
+
+<div class="banner">
+    <h2>Prepare-se para a batalha!</h2>
+</div>
+
+<section id="sobre">
+    <h2>Sobre o jogo</h2>
+
+    <p>
+        Dragon Ball Legends é um jogo de luta em tempo real para dispositivos móveis,
+        com batalhas PvP, eventos especiais e personagens de diversas sagas de Dragon Ball.
+        Os jogadores montam equipes, evoluem seus personagens e enfrentam adversários do
+        mundo inteiro.
+    </p>
+
+    <button onclick="mostrarMensagem()">
+        Entrar na Lenda
+    </button>
+</section>
+
+<section id="personagens">
+    <h2>Personagens Populares</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x250?text=Goku" alt="Goku">
+            <h3>Goku</h3>
+            <p>O guerreiro Saiyajin que protege a Terra.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x250?text=Vegeta" alt="Vegeta">
+            <h3>Vegeta</h3>
+            <p>Príncipe dos Saiyajins e eterno rival de Goku.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x250?text=Gohan" alt="Gohan">
+            <h3>Gohan</h3>
+            <p>Filho de Goku com enorme potencial de batalha.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="novidades">
+    <h2>Novidades</h2>
+
+    <ul>
+        <li>⭐ Novos personagens Ultra.</li>
+        <li>⚡ Eventos especiais.</li>
+        <li>🏆 Torneios PvP.</li>
+        <li>🎁 Recompensas diárias.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Fan Site Dragon Ball Legends © 2026</p>
+</footer>
+
+<script>
+function mostrarMensagem(){
+    alert("Bem-vindo ao universo de Dragon Ball Legends!");
+}
+</script>
+
+</body>
+</html>
